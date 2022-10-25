@@ -1,2 +1,10 @@
 # 201d92-about-me
-About Me: 201d92
+
+## Author: Deiosha Sparks
+
+## Lab02
+- Dis basic setup for about me project
+
+## Lab03
+
+## Lab04
