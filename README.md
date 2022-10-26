@@ -3,7 +3,8 @@
 ## Author: Deiosha Sparks
 
 ## Lab02
-- Dis basic setup for about me project
+
+- Did basic setup for About Me project
 
 ## Lab03
 

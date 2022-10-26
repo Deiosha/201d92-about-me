@@ -1,0 +1,29 @@
+body {
+  background-color:lavenderblush;
+}
+
+h1{
+  font-family:cursive;
+  font-size: 5vw;
+  color:rgb(76, 134, 193);
+}
+
+p{
+  color:rgb(109, 85, 89) ;
+}
+
+section p.more-content {
+  color: rgb(139, 10, 10);
+  background-color: rgb(41, 132, 92);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.some-more {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.little-more {
+  background-color: rgb(114, 35, 8);
+  color: black;
+
+}
