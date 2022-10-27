@@ -1,8 +1,8 @@
 'use strict';
 
-let finalScore = 0;
-
 console.log('Hello World');
+
+let finalScore = 0;
 
 let visitorName = prompt('What is your name?');
 
@@ -65,45 +65,38 @@ if(questionFiveGuess === 'YES' || questionFiveGuess === 'Y') {
   finalScore++;
 }
 
-let myNum = 5;
-let guess = 0;
-let totalGuesses = 4;
-let correct = false;
 
-while (guess < totalGuesses && ! correct){
-  let userGuess = prompt('Guess a number I am thinking');
-  if (userGuess < myNum) {
-    alert('Too low! Try again.');
-    guess ++;
-    console.log(guess);
-  } else if(userGuess > myNum) {
+let correctNumber = 5;
+let attemps = 4;
+while (attemps){
+  let guess = +prompt('Guess a number 1-15');
+  if(guess > correctNumber) {
     alert('Too high! Try again.');
-    guess ++;
+  } else if (guess < correctNumber) {
+    alert('Too low! Try again.');
   } else {
-    alert('Correct!!');
+    alert('Correct!');
     finalScore++;
-    correct = true;
+    break;
+  }
+  attemps--;
+  if(attemps === 0) {
+    alert(`The correct answer is ${correctNumber}`);
   }
 }
 
-let guesstwo = 0;
-let totalGuessesTwo = 6;
-let correctTwo = false;
 
-let colors = ['Blue','Red', 'Pink','Orange', 'Black', 'purple'];
+let colors = ['blue', 'red', 'pink', 'orange', 'black', 'purple'];
+for(let i = 0; i < 6; i++) {
+  let colorsGuess = prompt('Guess a color').toLowerCase;
 
-while (guesstwo < totalGuessesTwo && ! correctTwo){
-  let userGuessTwo = prompt('Guess a color');
-  if (userGuessTwo < colors) {
-    alert('Guess Again!');
-    guesstwo ++;
-  } else {
-    alert('You are correct!');
-    finalScore++;
-    correctTwo = true;
-  } if (totalGuessesTwo > guesstwo) {
-    alert('the correct answers are Red, Pink ,Orange, Black, and purple');
-  }
+  for(let j = 0; j < colors.length; j++)
+    if(colorsGuess === colors[j]) {
+      alert('That is correct!');
+      finalScore++;
+      i = 6;
+      break;
+    }
 }
 
 
