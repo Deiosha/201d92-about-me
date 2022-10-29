@@ -5,7 +5,7 @@ console.log('Hello World');
 let finalScore = 0;
 
 let visitorName = prompt('What is your name?');
-
+// console.log(visitorName);
 alert(`Welcome to my site ${visitorName}! Please answer yes or no to the following questions.`);
 
 function questionOneGuess() {

@@ -3,7 +3,8 @@ body {
 }
 
 h1{
-  font-family:cursive;
+  font-family:sans-serif;
+  text-align: center;
   font-size: 5vw;
   color:rgb(125, 158, 191);
 }
@@ -27,7 +28,12 @@ section p.more-content {
   color: whitesmoke;
 
 }
+.quote{
+  outline: 3px solid;
+  background-position: left;
+}
 h2{
+  text-align: center;
   color: rgb(47, 116, 116);
 }
 
